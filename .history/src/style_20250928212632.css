@@ -1,0 +1,141 @@
+
+:root {
+  /* 使用 Element Plus 字体栈 */
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Element Plus 颜色系统 */
+  color-scheme: light dark;
+  color: var(--el-text-color-primary);
+  background-color: var(--el-bg-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--el-color-primary);
+  text-decoration: inherit;
+  transition: color var(--el-transition-duration);
+}
+a:hover {
+  color: var(--el-color-primary-light-3);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--el-bg-color);
+}
+
+#app {
+  height: 100%;
+  color: var(--el-text-color-primary);
+}
+
+h1 {
+  font-size: var(--el-font-size-extra-large);
+  line-height: 1.1;
+  color: var(--el-text-color-primary);
+  font-weight: var(--el-font-weight-primary);
+}
+
+/* 使用 Element Plus 按钮样式变量 */
+button {
+  border-radius: var(--el-border-radius-base);
+  border: var(--el-border);
+  padding: var(--el-button-padding-vertical) var(--el-button-padding-horizontal);
+  font-size: var(--el-font-size-base);
+  font-weight: var(--el-font-weight-primary);
+  font-family: inherit;
+  background-color: var(--el-button-bg-color);
+  color: var(--el-button-text-color);
+  cursor: pointer;
+  transition: all var(--el-transition-duration);
+}
+
+button:hover {
+  background-color: var(--el-button-hover-bg-color);
+  border-color: var(--el-button-hover-border-color);
+  color: var(--el-button-hover-text-color);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--el-color-primary-light-7);
+  outline-offset: 1px;
+}
+
+button:active {
+  background-color: var(--el-button-active-bg-color);
+  border-color: var(--el-button-active-border-color);
+  color: var(--el-button-active-text-color);
+}
+
+.card {
+  padding: var(--el-card-padding);
+  background-color: var(--el-bg-color-page);
+  border: var(--el-border);
+  border-radius: var(--el-border-radius-base);
+  box-shadow: var(--el-box-shadow-light);
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--el-main-padding);
+  text-align: center;
+  background-color: var(--el-bg-color);
+}
+
+/* Element Plus 暗色主题适配 */
+/* 当 useDark 在 html 标签上应用 'dark' 类时，这些变量将覆盖 Element Plus 的默认深色主题样式。 */
+html.dark {
+  --el-bg-color: #141414;
+  --el-bg-color-page: #0a0a0a;
+  --el-bg-color-overlay: #1d1d1d;
+  --el-text-color-primary: #e5e5e5;
+  --el-text-color-regular: #d1d1d1;
+  --el-text-color-secondary: #a3a3a3;
+  --el-text-color-placeholder: #8d8d8d;
+  --el-border-color: #444;
+  --el-border-color-light: #555;
+  --el-border-color-lighter: #666;
+  --el-border-color-extra-light: #777;
+  --el-fill-color: #333;
+  --el-fill-color-light: #444;
+  --el-fill-color-lighter: #555;
+  --el-fill-color-extra-light: #666;
+  --el-fill-color-blank: transparent;
+}
+
+html.dark .el-card {
+  --el-card-bg-color: #1d1d1d;
+  box-shadow: var(--el-box-shadow-light);
+}
+
+html.dark .el-button {
+  --el-button-text-color: var(--el-text-color-primary);
+  --el-button-bg-color: #2c2c2c;
+  --el-button-border-color: #555;
+  --el-button-hover-bg-color: #383838;
+  --el-button-hover-border-color: #666;
+  --el-button-active-bg-color: #222;
+  --el-button-active-border-color: #444;
+}
+
+html.dark .el-switch__core {
+  --el-switch-on-color: var(--el-color-primary);
+  --el-switch-off-color: #333;
+}
+
+html.dark .theme-switch-container {
+  background-color: #1f1f1f;
+  border-color: var(--el-border-color-light) !important;
+}
