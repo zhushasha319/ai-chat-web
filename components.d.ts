@@ -8,6 +8,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    BaseDialog: typeof import('./src/components/BaseDialog.vue')['default']
     ChatComposer: typeof import('./src/components/ChatComposer.vue')['default']
     ChatMessage: typeof import('./src/components/ChatMessage.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
@@ -25,8 +26,11 @@ declare module 'vue' {
     ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
     ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
     ElSwitch: typeof import('element-plus/es')['ElSwitch']
+    Input: typeof import('./src/components/input.vue')['default']
+    LazyImage: typeof import('./src/components/LazyImage.vue')['default']
     MarkdownView: typeof import('./src/components/MarkdownView.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    VirtualChatList: typeof import('./src/components/VirtualChatList.vue')['default']
   }
 }
